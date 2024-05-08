@@ -1,9 +1,0 @@
-- name: Deploy using ssh
-  uses: appleboy/ssh-action@master
-  with:
-    host: ${{ secrets.HOST }}
-    username: ${{ secrets.USERNAME }}
-    key: ${{ secrets.SSH_PRIVATE_KEY }}
-    port: 22
-    script: |
-      ssh -vvv -o StrictHostKeyChecking=no -p 22 ${{ secrets.USERNAME }}@${{ secrets.HOST }} "echo 'SSH connection established.'"
