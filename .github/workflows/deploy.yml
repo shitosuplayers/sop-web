@@ -1,7 +1,0 @@
-name: Push Code To Server
-
-on:
-    push:
-        branches: [master, main]
-    pull request: 
-        branches: [master, main]
