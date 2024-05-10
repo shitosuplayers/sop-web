@@ -13,7 +13,7 @@ body {
     src: url(/fonts/GemunuLibre.ttf);
 }
 
-#grad {
+#bgGrad {
     background: linear-gradient(var(--background), var(--backgroundGrad));
     width: 100%;
     height: 100vh;
