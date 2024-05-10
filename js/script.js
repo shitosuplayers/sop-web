@@ -28,7 +28,8 @@ window.addEventListener('DOMContentLoaded', function () {
     navItemLinks.forEach(link => {
         const linkHref = link.getAttribute('href');
         const linkPath = linkHref.endsWith('.html') ? linkHref.slice(0, -5) : linkHref; // Remove .html extension if present
-        if (currentPageUrl === linkPath || (linkPath === '/index' && currentPageUrl === '/')) {
+        const currentPath = currentPageUrl.endsWith('.html') ? currentPageUrl.slice(0, -5) : currentPageUrl; // Remove .html extension if present
+        if (currentPath === linkPath || (linkPath === '/index' && currentPath === '/')) {
             link.parentNode.classList.add('active');
         }
     });

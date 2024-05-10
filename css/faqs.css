@@ -41,12 +41,12 @@ main{
 }
 
 .answer {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
 }
 
 .faqs.active .answer {
-    height: fit-content;
+    max-height: fit-content;
 }
 
 .answer p {
