@@ -1,4 +1,5 @@
-/* all general styling */
+/* GLOBAL STYLING */
+
 :root {
     --background: rgb(14, 14, 14);
     --backgroundGrad: rgb(24, 7, 32);
@@ -13,6 +14,16 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+}
+
+@font-face {
+    font-family: Aller;
+    src: url(/media/fonts/Aller_Bold.ttf);
+}
+
+@font-face {
+    font-family: Gemunu;
+    src: url(/media/fonts/GemunuLibre.ttf);
 }
 
 body {
@@ -39,19 +50,9 @@ body::-webkit-scrollbar-thumb:hover {
     transition: ease-in-out 0.5s;
 }
 
-@font-face {
-    font-family: Aller;
-    src: url(/fonts/Aller_Bold.ttf);
-}
-
-@font-face {
-    font-family: Gemunu;
-    src: url(/fonts/GemunuLibre.ttf);
-}
-
-#grad {
+#bgGrad {
     background: linear-gradient(var(--background), var(--backgroundGrad));
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     top: 0;
     position: fixed;
@@ -134,7 +135,6 @@ header {
     width: auto;
     margin-right: 5px;
     transition: transform 0.3s ease;
-    image-rendering: crisp-edges;
 }
 
 .nav-branding img:hover {
@@ -143,7 +143,7 @@ header {
 
 header h1 {
     font-family: Aller;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .nav-menu {
@@ -155,9 +155,17 @@ header h1 {
 }
 
 .nav-menu a {
-    font-size: 10pt;
+    font-size: 14px;
     font-family: Aller;
     transition: ease-out 0.1s;
+}
+
+.nav-item a {
+    opacity: 0.8;
+}
+
+.nav-item.active a {
+    opacity: 1;
 }
 
 .nav-menu a:hover {
