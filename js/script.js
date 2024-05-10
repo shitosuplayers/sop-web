@@ -7,8 +7,11 @@ window.addEventListener('DOMContentLoaded', function () {
     const pageTitles = {
         '/': 'shit osu! players', // Default title for home page
         '/index.html': 'shit osu! players',
+        '/index': 'shit osu! players',
         '/html/members.html': 'Members',
-        '/html/faqs.html': 'FAQs'
+        '/html/members': 'Members',
+        '/html/faqs.html': 'FAQs',
+        '/html/faqs': 'FAQs',
         // Add more page titles as needed
     };
 
