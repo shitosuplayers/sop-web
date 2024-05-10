@@ -73,7 +73,7 @@
     right: 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .hero-container {
         margin-left: vw;
         margin-right: 0;
@@ -148,7 +148,7 @@
     display: block;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .about-us .divLine {
         width: 95vw;
     }
@@ -169,7 +169,7 @@
     }
 }
 
-@media screen and (max-width: 512px) {
+@media (max-width: 512px) {
     .about-us h1 {
         font-size: 20vw;
     }

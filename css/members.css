@@ -1,5 +1,34 @@
-.content {
-    margin-top: 15vh;
+.notice {
+    position: absolute;
+    background-color: rgba(255, 165, 0, 0.8);
+    width: 100%;
+    border-bottom: 4px dashed rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    font-size: 15px;
+    padding: 60px 100px 11px ;
+    top: -92px;
+    transition: top 1s;
+}
+
+.notice.active {
+    top: 0;
+}
+
+@media (max-width: 1024px) {
+    .notice {
+        padding: 60px 5% 10px;
+        font-size:calc(0.5vw + 10px);
+    }
+}
+
+@media (max-width: 360px) {
+    .notice {
+        padding: 50px 5% 10px;
+    }
+}
+
+.member-list-container {
+    margin-top: 100px;
 }
 
 .member-list-header p {

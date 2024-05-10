@@ -29,6 +29,7 @@
 body {
     background-color: var(--background);
     overflow-x: hidden;
+    font-family: Gemunu;
 }
 
 body::-webkit-scrollbar {
@@ -101,13 +102,13 @@ header {
     white-space: nowrap;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     header {
         padding: 10px 5%;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media (max-width: 360px) {
     header {
         height: 45px;
         padding: 5px 5%;
