@@ -27,7 +27,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Set active class for nav-item links
     navItemLinks.forEach(link => {
         const linkHref = link.getAttribute('href');
-        if (currentPageUrl.includes(linkHref) || (linkHref === '/index.html' && currentPageUrl === '/')) {
+        const linkPath = linkHref.endsWith('.html') ? linkHref.slice(0, -5) : linkHref; // Remove .html extension if present
+        if (currentPageUrl === linkPath || (linkPath === '/index' && currentPageUrl === '/')) {
             link.parentNode.classList.add('active');
         }
     });
