@@ -10,7 +10,7 @@ body {
 
 @font-face {
     font-family: Gemunu;
-    src: url(/fonts/GemunuLibre.ttf);
+    src: url(/media/fonts/GemunuLibre.ttf);
 }
 
 #bgGrad {
@@ -192,7 +192,6 @@ body {
 }
 
 .member-info .status-member {
-    font-family: Gemunu;
     font-size: 20px;
     background-color: var(--sopPurple);
     height: 25px;
@@ -203,7 +202,6 @@ body {
 }
 
 .member-info .status-owner {
-    font-family: Gemunu;
     font-size: 20px;
     background-color: #F1C40F;
     height: 25px;
@@ -214,7 +212,6 @@ body {
 }
 
 .member-info .status-moderator {
-    font-family: Gemunu;
     font-size: 20px;
     background-color: #E67E22;
     height: 25px;
@@ -225,7 +222,6 @@ body {
 }
 
 .member-info .status-content-manager {
-    font-family: Gemunu;
     font-size: 20px;
     background-color: #E91E63;
     height: 25px;
