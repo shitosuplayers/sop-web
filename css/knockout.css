@@ -1,0 +1,157 @@
+main {
+    margin-top: 100px;
+}
+
+.beatmap-background {
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px) saturate(0.6);
+    mix-blend-mode: lighten;
+    z-index: -1;
+
+    mask-image: linear-gradient(black, transparent);
+}
+
+.podium {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    padding: 0 20%;
+}
+
+.podium .first-podium, .podium .second-podium, .podium .third-podium {
+    width: 15%;
+    max-width: 130px;
+    border-top: 4px solid white;
+    text-align: center;
+    position: relative;
+}
+
+.podium .first-podium {
+    width: calc(15% * 1.66);
+    max-width: calc(130px * 1.66);
+
+    background: linear-gradient(transparent, rgba(255, 215, 0, 0.6));
+    height: 66%;
+}
+
+.podium .second-podium {
+    background: linear-gradient(transparent, rgba(192, 192, 192, 0.5));
+    height: 33%;
+}
+
+.podium .third-podium {
+    background: linear-gradient(transparent, rgba(205, 127, 50, 0.4));
+    height: 15%;
+}
+
+.first-place-player, .second-place-player, .third-place-player {
+    margin-top: -60px;
+    font-weight: bolder;
+    font-size: calc(15px + 1vw);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+#leaderboard-container {
+    width: 100%;
+    padding: 50px 15%;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+}
+
+.title-card {
+    opacity: 0.2;
+    padding: 0 10px;
+}
+
+.player-card {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.player-info, .title-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-info>div, .title-info>div {
+    flex: 1;
+}
+
+.player-score {
+    text-align: center;
+}
+
+.player-max-combo {
+    text-align: center;
+}
+
+.player-acc {
+    text-align: center;
+}
+
+.player-miss-count {
+    text-align: right;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+
+.player-card.first-place .player-name,
+.player-card.first-place .player-score,
+.player-card.first-place .player-max-combo,
+.player-card.first-place .player-acc,
+.player-card.first-place .player-miss-count {
+    color: gold;
+}
+
+.player-card.second-place .player-name,
+.player-card.second-place .player-score,
+.player-card.second-place .player-max-combo,
+.player-card.second-place .player-acc,
+.player-card.second-place .player-miss-count {
+    color: silver;
+}
+
+.player-card.third-place .player-name,
+.player-card.third-place .player-score,
+.player-card.third-place .player-max-combo,
+.player-card.third-place .player-acc,
+.player-card.third-place .player-miss-count {
+    color: #CD7F32;
+}
+
+
+@media (max-width: 770px) {
+    #leaderboard-container {
+        padding: 50px 5%;
+        font-size: calc(18px * 0.2 + 2.4vw * 0.8);
+    }
+
+    .podium {
+        padding: 0 5%;
+    }
+
+    .separator {
+        width: 95%;
+    }
+}

@@ -1,0 +1,197 @@
+{
+    "beatmap_link": "https://osu.ppy.sh/beatmapsets/577414#osu/1222063",
+    "leaderboard": [
+        {
+            "playername": "pundice",
+            "placement": 1,
+            "score": 148920878,
+            "acc": 99.94,
+            "misscount": 0,
+            "max_combo": 2886
+        },
+        {
+            "playername": "SWEDENTRUCKER13",
+            "placement": 2,
+            "score": 148709970,
+            "acc": 99.87,
+            "misscount": 0,
+            "max_combo": 2884
+        },
+        {
+            "playername": "nanolini",
+            "placement": 3,
+            "score": 148417966,
+            "acc": 99.68,
+            "misscount": 0,
+            "max_combo": 2886
+        },
+        {
+            "playername": "Purpol",
+            "placement": 4,
+            "score": 146655072,
+            "acc": 98.99,
+            "misscount": 0,
+            "max_combo": 2878
+        },
+        {
+            "playername": "Lawndred",
+            "placement": 5,
+            "score": 130344624,
+            "acc": 99.68,
+            "misscount": 0,
+            "max_combo": 2680
+        },
+        {
+            "playername": "Kailler",
+            "placement": 6,
+            "score": 83231060,
+            "acc": 97.60,
+            "misscount": 11,
+            "max_combo": 2162
+        },
+        {
+            "playername": "EmilisSux",
+            "placement": 7,
+            "score": 75456845,
+            "acc": 98.41,
+            "misscount": 2,
+            "max_combo": 2114
+        },
+        {
+            "playername": "Ralle",
+            "placement": 8,
+            "score": 83289808,
+            "acc": 98.67,
+            "misscount": 5,
+            "max_combo": 2113
+        },
+        {
+            "playername": "-HeadHunter-",
+            "placement": 9,
+            "score": 75456170,
+            "acc": 95.41,
+            "misscount": 7,
+            "max_combo": 2057
+        },
+        {
+            "playername": "Slimey26532",
+            "placement": 10,
+            "score": 75784802,
+            "acc": 97.96,
+            "misscount": 2,
+            "max_combo": 2014
+        },
+        {
+            "playername": "NiHoDi",
+            "placement": 11,
+            "score": 23346504,
+            "acc": 92.26,
+            "misscount": 63,
+            "max_combo": 1593
+        },
+        {
+            "playername": "RyeNO",
+            "placement": 12,
+            "score": 44771838,
+            "acc": 97.78,
+            "misscount": 2,
+            "max_combo": 1360
+        },
+        {
+            "playername": "aluumei",
+            "placement": 13,
+            "score": 35532394,
+            "acc": 93.53,
+            "misscount": 13,
+            "max_combo": 1232
+        },
+        {
+            "playername": "Propan Butan",
+            "placement": 14,
+            "score": 38793910,
+            "acc": 96.50,
+            "misscount": 6,
+            "max_combo": 1167
+        },
+        {
+            "playername": "Cant Even FC",
+            "placement": 15,
+            "score": 37528524,
+            "acc": 94.40,
+            "misscount": 19,
+            "max_combo": 1166
+        },
+        {
+            "playername": "AstroVnz",
+            "placement": 16,
+            "score": 34786678,
+            "acc": 98.53,
+            "misscount": 6,
+            "max_combo": 1103
+        },
+        {
+            "playername": "Z00m",
+            "placement": 17,
+            "score": 32609333,
+            "acc": 95.38,
+            "misscount": 11,
+            "max_combo": 912
+        },
+        {
+            "playername": "Akaane",
+            "placement": 18,
+            "score": 13197734,
+            "acc": 87.06,
+            "misscount": 29,
+            "max_combo": 713
+        },
+        {
+            "playername": "ImGonnaFix HER",
+            "placement": 19,
+            "score": 13197734,
+            "acc": 87.06,
+            "misscount": 29,
+            "max_combo": 713
+        },
+        {
+            "playername": "antimarker",
+            "placement": 20,
+            "score": 3121408,
+            "acc": 81.68,
+            "misscount": 84,
+            "max_combo": 439
+        },
+        {
+            "playername": "ROKSANA WEGIEL",
+            "placement": 21,
+            "score": 2863322,
+            "acc": 75.71,
+            "misscount": 293,
+            "max_combo": 336
+        },
+        {
+            "playername": "Macross Plus",
+            "placement": 22,
+            "score": 2723248,
+            "acc": 80.94,
+            "misscount": 63,
+            "max_combo": 277
+        },
+        {
+            "playername": "Ziquids",
+            "placement": 23,
+            "score": 883144,
+            "acc": 60.26,
+            "misscount": 272,
+            "max_combo": 89
+        },
+        {
+            "playername": "Fu cmass",
+            "placement": 24,
+            "score": 31560,
+            "acc": 1.79,
+            "misscount": 2038,
+            "max_combo": 56
+        }
+    ]
+}

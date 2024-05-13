@@ -275,7 +275,7 @@ header h1 {
 footer {
     word-spacing: -3px;
     padding: 80px 13% 70px;
-    background-color: #100716;
+    background-color: #17071f;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 3.5rem;
