@@ -279,7 +279,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 3.5rem;
-    box-shadow: 0 50vh 0 50vh #100716;
+    box-shadow: 0 50vh 0 50vh #17071f;
 }
 
 .footer-branding {

@@ -1,0 +1,25 @@
+{
+    "events": [
+        {
+            "id": "sop!Knockout_May_2024",
+            "type": "knockout",
+            "date": "2024-05-05",
+            "status": "completed",
+            "cover_image_url": "/example/image.png/jpg"
+        },
+        {
+            "id": "sop!Knockout_June_2024",
+            "type": "knockout",
+            "date": "2024-06-02",
+            "status": "in progress",
+            "cover_image_url": "/example/image.png/jpg"
+        },
+        {
+            "id": "sop!_Meetup_2024",
+            "type": "meetup",
+            "date": "",
+            "status": "scheduled",
+            "cover_image_url": "/example/image.png/jpg"
+        }
+    ]
+}

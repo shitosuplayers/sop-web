@@ -1,0 +1,33 @@
+main {
+    margin-top: 100px;
+}
+
+.event {
+    margin: 50px auto;
+    width: 50vw;
+    border: 2px rgba(255, 255, 255, 0.3) solid;
+    border-radius: 6px;
+}
+
+.cover {
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    background-color: darkred;
+    display: flex;
+    align-items: flex-end;
+    font-size: 25px;
+    box-sizing: content-box;
+    padding: 5px;
+    border-radius: 6px 6px 0 0;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    background-color: rgb(34, 12, 41);
+    height: 30px;
+    border-radius: 0 0 6px 6px;
+}
