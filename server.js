@@ -1,3 +1,4 @@
+// Server side
 const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
@@ -9,19 +10,22 @@ app.use((req, res, next) => {
     next();
 });
 
-// Route to test osu! API connection
+// Route to fetch member data
 app.get('/test-api', async (req, res) => {
     try {
-        const osuId = '15794645'; // Example osu! ID for testing
-        const apiUrl = `https://osu.ppy.sh/api/get_user?k=${apiKey}&u=${osuId}`;
+        // Fetch data from the osu! API
+        const apiUrl = `https://osu.ppy.sh/api/get_user?k=${apiKey}&u=xiraphotography`;
         const response = await fetch(apiUrl);
-        const userData = await response.json();
+        
+        // Log the raw response content
+        const responseData = await response.text();
+        console.log('Response from osu! API:', responseData);
 
-        if (userData && userData.length > 0) {
-            res.json(userData[0]); // Return the first user data object
-        } else {
-            res.status(404).json({ error: 'User not found' });
-        }
+        // Parse the response as JSON
+        const userData = JSON.parse(responseData);
+        
+        // Send the parsed JSON response to the client
+        res.json(userData);
     } catch (error) {
         console.error('Error fetching osu! API data:', error);
         res.status(500).json({ error: 'Internal server error' });
