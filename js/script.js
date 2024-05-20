@@ -11,12 +11,12 @@ var img = new Image();
 img.src = imageUrl;
 
 // When the image loads successfully, switch the background to the image
-img.onload = function() {
+img.onload = function () {
     bgGrad.style.backgroundImage = `url(${img.src})`;
 };
 
 // If the image fails to load, keep the linear gradient as the background
-img.onerror = function() {
+img.onerror = function () {
     console.log("Image failed to load");
 };
 
@@ -35,31 +35,30 @@ window.addEventListener('DOMContentLoaded', function () {
 
         '/faqs': 'FAQs',
         '/html/faqs.html': 'FAQs',
-        
+
         '/events': 'Events',
         '/html/events.html': 'Events',
         // Add more page titles as needed
     };
 
-    // Normalize the URL by removing the trailing slash if it exists
-    const normalizeUrl = url => url.endsWith('/') ? url.slice(0, -1) : url;
+    // Normalize the URL by removing the trailing slash if it exists and the .html extension
+    const normalizeUrl = url => {
+        url = url.replace(/\.html$/, ''); // Remove .html extension if present
+        url = url.endsWith('/') ? url.slice(0, -1) : url; // Remove trailing slash if present
+        return url || '/'; // Return '/' if URL is empty
+    };
+
 
     // Normalize current page URL
     const normalizedCurrentPageUrl = normalizeUrl(currentPageUrl);
-    
-    // Create normalized page titles map
-    const normalizedPageTitles = Object.keys(pageTitles).reduce((acc, key) => {
-        acc[normalizeUrl(key)] = pageTitles[key];
-        return acc;
-    }, {});
 
     // Set header title based on the current page URL
-    if (normalizedPageTitles[normalizedCurrentPageUrl]) {
-        headerTitle.textContent = normalizedPageTitles[normalizedCurrentPageUrl];
-        document.title = normalizedPageTitles[normalizedCurrentPageUrl]; // Set HTML title
+    if (pageTitles[normalizedCurrentPageUrl]) {
+        headerTitle.textContent = pageTitles[normalizedCurrentPageUrl];
+        document.title = pageTitles[normalizedCurrentPageUrl]; // Set HTML title
     } else {
         // Extract the title from the URL without .html extension
-        const pageTitle = normalizedCurrentPageUrl.split('/').pop().split('.')[0];
+        const pageTitle = normalizedCurrentPageUrl.split('/').pop();
         headerTitle.textContent = pageTitle;
         document.title = pageTitle; // Set HTML title
     }
@@ -67,14 +66,10 @@ window.addEventListener('DOMContentLoaded', function () {
     // Set active class for nav-item links
     navItemLinks.forEach(link => {
         const linkHref = link.getAttribute('href');
-        const linkPath = normalizeUrl(linkHref.endsWith('.html') ? linkHref.slice(0, -5) : linkHref); // Remove .html extension if present
-        const currentPath = normalizeUrl(normalizedCurrentPageUrl.endsWith('.html') ? normalizedCurrentPageUrl.slice(0, -5) : normalizedCurrentPageUrl); // Remove .html extension if present
+        const normalizedLinkHref = normalizeUrl(linkHref);
 
-        // Check for the root URL special case
-        if ((currentPath === '/' && linkPath === '/index') || (currentPath === '/index' && linkPath === '/')) {
-            link.parentNode.classList.add('active');
-        } else if (currentPath === linkPath) {
-            link.parentNode.classList.add('active');
+        if (normalizedLinkHref === normalizedCurrentPageUrl || (normalizedLinkHref === '/index' && normalizedCurrentPageUrl === '/')) {
+            link.closest('.nav-item').classList.add('active');
         }
     });
 
