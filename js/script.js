@@ -8,7 +8,7 @@ img.src = imageUrl;
 img.onload = () => bgGrad.style.backgroundImage = `url(${img.src})`;
 img.onerror = () => console.log("Image failed to load");
 
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     const headerTitle = document.querySelector('.nav-branding h1');
     const pageTitle = window.location.pathname.split('/').pop().split('.')[0];
     headerTitle.textContent = pageTitle;
@@ -35,15 +35,9 @@ window.addEventListener('DOMContentLoaded', () => {
         if (socialLinks[socialClass]) link.href = socialLinks[socialClass];
     });
 
-    // Function to add 'active' class to the appropriate nav item
-    function setActiveNavItem() {
-        const navItems = document.querySelectorAll('.nav-item');
-        navItems.forEach(item => {
-            const link = item.querySelector('a').getAttribute('href');
-            item.classList.toggle('active', window.location.pathname.indexOf(link) !== -1);
-        });
-    }
-
-    // Call the function initially to set the active nav item
-    setActiveNavItem();
+    const currentPage = window.location.pathname.split("/").pop().split(".")[0]; // Extract current page name
+    document.querySelectorAll(".nav-item").forEach(item => {
+        const pageName = item.querySelector("a").getAttribute("href").split("/").pop().split(".")[0]; // Extract page name from href
+        if (currentPage === pageName) item.classList.add("active");
+    });
 });
