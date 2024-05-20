@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('https://https://84.210.67.128/test-api')
+    fetch('https://https://shitosuplayers.xyz/test-api')
         .then(response => response.json())
         .then(data => {
             console.log('Fetched osu! API data:', data);
