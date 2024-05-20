@@ -1,3 +1,25 @@
+var bgGrad = document.getElementById('bgGrad');
+var imageUrl = '/media/images/grad.png';
+
+// Display linear gradient while the image is loading
+bgGrad.style.backgroundImage = 'linear-gradient(var(--background), var(--backgroundGrad))';
+
+// Create an image element
+var img = new Image();
+
+// Set the image source
+img.src = imageUrl;
+
+// When the image loads successfully, switch the background to the image
+img.onload = function() {
+    bgGrad.style.backgroundImage = `url(${img.src})`;
+};
+
+// If the image fails to load, keep the linear gradient as the background
+img.onerror = function() {
+    console.log("Image failed to load");
+};
+
 window.addEventListener('DOMContentLoaded', function () {
     const currentPageUrl = window.location.pathname || '/'; // Use '/' if pathname is empty
     const headerSolid = document.getElementById('headerSolid');

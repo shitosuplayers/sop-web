@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #bgGrad {
-    background: linear-gradient(var(--background), var(--backgroundGrad));
+    background-size: 100% 100%;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -80,7 +80,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(transparent, rgba(10,10,10,0.3));
+    background: linear-gradient(transparent, rgba(10,10,10,0.2));
     z-index: -1;
     opacity: 0;
     transition: ease;
