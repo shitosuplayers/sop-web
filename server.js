@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 app.get('/data/members', async (req, res) => {
     try {
         // Fetch member data from your JSON file
-        const membersResponse = await fetch('https://shitosuplayers.xyz/data/members.json');
+        const membersResponse = await fetch('https://shitosuplayers.xyz/data/members');
         const membersData = await membersResponse.json();
 
         // Function to fetch user data from osu! API
