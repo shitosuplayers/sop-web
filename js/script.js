@@ -29,21 +29,27 @@ window.addEventListener('DOMContentLoaded', function () {
     const pageTitles = {
         '/': 'shit osu! players', // Default title for home page
         '/index.html': 'shit osu! players',
-        '/index': 'shit osu! players',
+
+        '/members': 'Members',
         '/html/members.html': 'Members',
-        '/html/members': 'Members',
+
+        '/faqs': 'FAQs',
         '/html/faqs.html': 'FAQs',
-        '/html/faqs': 'FAQs',
+        
+        '/events': 'Events',
+        '/html/events.html': 'Events',
         // Add more page titles as needed
     };
 
     // Set header title based on the current page URL
     if (pageTitles[currentPageUrl]) {
         headerTitle.textContent = pageTitles[currentPageUrl];
+        document.title = pageTitles[currentPageUrl]; // Set HTML title
     } else {
         // Extract the title from the HTML file name or URL without .html extension
         const pageTitle = currentPageUrl.split('/').pop().split('.')[0];
         headerTitle.textContent = pageTitle;
+        document.title = pageTitle; // Set HTML title
     }
 
     // Set active class for nav-item links
