@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => document.querySelector('.notice').classList.add('active'), 100);
     
     // Fetch member data from your backend server
-    fetch('https://shitosuplayers.xyz/data/members')
+    fetch('https://shitosuplayers.xyz/data/members.json')
         .then(response => response.json())
         .then(data => {
             const memberList = document.getElementById('memberList');
