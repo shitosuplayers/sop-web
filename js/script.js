@@ -31,3 +31,18 @@ document.querySelectorAll('.nav-socials a, .footer-content .socials a').forEach(
     const socialClass = link.classList[0];
     if (socialLinks[socialClass]) link.href = socialLinks[socialClass];
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const exceptions = {
+        "index": "shit osu! players",
+        "members": "Members",
+        "faqs": "FAQs",
+        "events": "Events"
+    };
+
+    const currentURL = (window.location.pathname.split("/").pop().split(".")[0] || "index").toLowerCase();
+    const pageTitle = exceptions[currentURL] || currentURL.replace(/_/g, ' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+    document.querySelector("header h1").textContent = pageTitle;
+    document.title = pageTitle;
+});

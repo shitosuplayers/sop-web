@@ -272,6 +272,12 @@ header h1 {
     }
 }
 
+@media (max-width: 360px){
+    .nav-menu {
+        top: 30px;
+    }
+}
+
 footer {
     word-spacing: -3px;
     padding: 80px 13% 70px;
