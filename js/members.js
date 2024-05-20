@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Show notice after a short delay
     setTimeout(() => document.querySelector('.notice').classList.add('active'), 100);
     
-    fetch('https://shitosuplayers.xyz/data/members')
+    fetch('https://shitosuplayers.xyz/data/members.json')
         .then(response => response.json())
         .then(data => {
             // Access member data and render it in your HTML
