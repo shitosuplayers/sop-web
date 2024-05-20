@@ -16,25 +16,14 @@ window.addEventListener('DOMContentLoaded', function () {
     };
 
     // Set header title based on the current page URL
-    if (pageTitles[currentPageUrl]) {
-        headerTitle.textContent = pageTitles[currentPageUrl];
-    } else {
-        // Extract the title from the HTML file name
-        const pageTitle = currentPageUrl.split('/').pop().split('.')[0];
-        headerTitle.textContent = pageTitle;
-    }
-
-    // Debugging: Output current page URL
-    console.log("Current Page URL:", currentPageUrl);
+    let pageTitle = pageTitles[currentPageUrl] || currentPageUrl.split('/').pop().split('.')[0];
+    headerTitle.textContent = pageTitle;
 
     // Set active class for nav-item links
     navItemLinks.forEach(link => {
         const linkHref = link.getAttribute('href');
-        console.log("Link Href:", linkHref);
         const linkPath = linkHref.endsWith('.html') ? linkHref.slice(0, -5) : linkHref; // Remove .html extension if present
-        console.log("Link Path:", linkPath);
         const currentPath = currentPageUrl.endsWith('.html') ? currentPageUrl.slice(0, -5) : currentPageUrl; // Remove .html extension if present
-        console.log("Current Path:", currentPath);
         if (currentPath === linkPath || (linkPath === '/index' && currentPath === '/')) {
             link.parentNode.classList.add('active');
         }
