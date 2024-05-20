@@ -1,7 +1,7 @@
 /* GLOBAL STYLING */
 
 :root {
-    --background: rgb(14, 14, 14);
+    --background: rgb(10, 10, 10);
     --backgroundGrad: rgb(24, 7, 32);
     --text: white;
     --sopPurple: rgb(118, 45, 187);
@@ -64,7 +64,7 @@ header {
     height: 60px;
     width: 100%;
     padding: 10px 100px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
 
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(19,19,19,0.5));
+    background: linear-gradient(transparent, rgba(10,10,10,0.3));
     z-index: -1;
     opacity: 0;
     transition: ease;
