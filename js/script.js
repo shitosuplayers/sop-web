@@ -68,10 +68,14 @@ window.addEventListener('DOMContentLoaded', function () {
         const linkHref = link.getAttribute('href');
         const normalizedLinkHref = normalizeUrl(linkHref);
 
-        if (normalizedLinkHref === normalizedCurrentPageUrl || (normalizedLinkHref === '/index' && normalizedCurrentPageUrl === '/')) {
+        if (
+            normalizedLinkHref === normalizedCurrentPageUrl ||
+            (normalizedLinkHref === '/index' && normalizedCurrentPageUrl === '/')
+        ) {
             link.closest('.nav-item').classList.add('active');
         }
     });
+
 
     // Scroll event listener for header opacity animation
     window.addEventListener('scroll', function () {
