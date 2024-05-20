@@ -219,7 +219,7 @@
     box-sizing: content-box;
 }
 
-.member-info .outline {
+.member-info .outline-member {
     position: absolute;
     height: calc(75px + 8px);
     width: calc(350px + 8px);

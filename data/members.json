@@ -1,17 +1,362 @@
-[
-    {
-      "username": "Kailler",
-      "discord": "kaillr",
-      "status": "Moderator"
-    },
-    {
-      "username": "Akaane",
-      "discord": "akaneyanagin",
-      "status": "Content Manager"
-    },
-    {
-      "username": "Felicia",
-      "discord": "playcount",
-      "status": "Member"
-    }
-  ]
+{
+  "members": {
+    
+    "Owner": [
+      {
+        "name": "xira osu",
+        "osu_id": "15794645",
+        "discord": "xiraphotography"
+      }
+    ],
+
+
+
+    "Moderator": [
+      {
+        "name": "Kailler",
+        "osu_id": "14935208",
+        "discord": "kaillr"
+      },
+      {
+        "name": "Kurean",
+        "osu_id": "10622576",
+        "discord": "kurean"
+      },
+      {
+        "name": "Mitsera",
+        "osu_id": "15551036",
+        "discord": "elizaline"
+      },
+      {
+        "name": "Mr Wang",
+        "osu_id": "18150572",
+        "discord": "nyuosu"
+      },
+      {
+        "name": "papercandle",
+        "osu_id": "12353810",
+        "discord": "papercandle."
+      },
+      {
+        "name": "AstroVnz",
+        "osu_id": "24486749",
+        "discord": "astrovnz"
+      },
+      {
+        "name": "Vibrantiss",
+        "osu_id": "19958814",
+        "discord": "vibrantiss"
+      }
+    ],
+
+
+
+    "Content Manager": [
+      {
+        "name": "Akaane",
+        "osu_id": "11882722",
+        "discord": "akaneyanagin"
+      },
+      {
+        "name": "AstroVnz",
+        "osu_id": "24486749",
+        "discord": "astrovnz"
+      },
+      {
+        "name": "Kailler",
+        "osu_id": "14935208",
+        "discord": "kaillr"
+      },
+      {
+        "name": "Utlending",
+        "osu_id": "14490030",
+        "discord": "anan505"
+      }
+    ],
+
+
+
+    "Member": [
+      {
+        "name": "AjxGame",
+        "osu_id": "12539727",
+        "discord": "aj4gdesu"
+      },
+      {
+        "name": "Andreas",
+        "osu_id": "10855039",
+        "discord": "andreas3627"
+      },
+      {
+        "name": "antimarker",
+        "osu_id": "32384156",
+        "discord": "antimarker"
+      },
+      {
+        "name": "ArlyOwO",
+        "osu_id": "14608394",
+        "discord": "ar1y"
+      },
+      {
+        "name": "Avisar",
+        "osu_id": "12745191",
+        "discord": "avisar"
+      },
+      {
+        "name": "baconelsker",
+        "osu_id": "11638561",
+        "discord": "baconelsker"
+      },
+      {
+        "name": "Big PP",
+        "osu_id": "18195208",
+        "discord": "akolibed."
+      },
+      {
+        "name": "chaotic_turtle",
+        "osu_id": "5563397",
+        "discord": "chaoticturtle"
+      },
+      {
+        "name": "Chrisse",
+        "osu_id": "18382591",
+        "discord": "chrisse_"
+      },
+      {
+        "name": "DLF_ferozz",
+        "osu_id": "23302049",
+        "discord": "dlf_ferozz"
+      },
+      {
+        "name": "dotnuggets",
+        "osu_id": "32467567",
+        "discord": "neitakk"
+      },
+      {
+        "name": "EmilisSux",
+        "osu_id": "12844341",
+        "discord": "emilissux"
+      },
+      {
+        "name": "f1ct1ve",
+        "osu_id": "13148786",
+        "discord": ".fictive"
+      },
+      {
+        "name": "Felicia",
+        "osu_id": "19264579",
+        "discord": "playcount"
+      },
+      {
+        "name": "Feurio90",
+        "osu_id": "31252931",
+        "discord": "feurio90"
+      },
+      {
+        "name": "Fjell",
+        "osu_id": "6951444",
+        "discord": "fjell"
+      },
+      {
+        "name": "Fu cmass",
+        "osu_id": "30517724",
+        "discord": "fu_cmass"
+      },
+      {
+        "name": "GATmoneyTJ1994",
+        "osu_id": "6735738",
+        "discord": "aleph_003"
+      },
+      {
+        "name": "GhostlyVinc",
+        "osu_id": "25674152",
+        "discord": "ghostlyvinc"
+      },
+      {
+        "name": "h1satomi",
+        "osu_id": "8838127",
+        "discord": "h1satomi"
+      },
+      {
+        "name": "Habbie",
+        "osu_id": "15837148",
+        "discord": ".habbie"
+      },
+      {
+        "name": "Hennytai",
+        "osu_id": "4266693",
+        "discord": "hennytai"
+      },
+      {
+        "name": "Hugan",
+        "osu_id": "16685094",
+        "discord": "hugankasta"
+      },
+      {
+        "name": "Hundur",
+        "osu_id": "3145033",
+        "discord": "hundur."
+      },
+      {
+        "name": "IceCold",
+        "osu_id": "12847517",
+        "discord": "icecoldvoid"
+      },
+      {
+        "name": "Jasan",
+        "osu_id": "16106251",
+        "discord": "jasan"
+      },
+      {
+        "name": "Joaco",
+        "osu_id": "9828202",
+        "discord": "joacosu"
+      },
+      {
+        "name": "Kaan",
+        "osu_id": "8618532",
+        "discord": "kaanii.hi"
+      },
+      {
+        "name": "Kwal1976",
+        "osu_id": "18659783",
+        "discord": "kwalichu"
+      },
+      {
+        "name": "Lanchii",
+        "osu_id": "7936243",
+        "discord": "lanchii"
+      },
+      {
+        "name": "Lawndred",
+        "osu_id": "10531825",
+        "discord": "lawndred"
+      },
+      {
+        "name": "Macross Plus",
+        "osu_id": "8020484",
+        "discord": "wather_reportv2"
+      },
+      {
+        "name": "Melvr",
+        "osu_id": "9211924",
+        "discord": "melvvrreer"
+      },
+      {
+        "name": "NiHoDi",
+        "osu_id": "18373466",
+        "discord": "nihodi"
+      },
+      {
+        "name": "Nordlys",
+        "osu_id": "12375176",
+        "discord": "oribkens"
+      },
+      {
+        "name": "Norwegian Vaxei",
+        "osu_id": "25687644",
+        "discord": "bibbybill"
+      },
+      {
+        "name": "osu_legendbeast",
+        "osu_id": "35916791",
+        "discord": "parmasan."
+      },
+      {
+        "name": "Password",
+        "osu_id": "9188550",
+        "discord": "xystus."
+      },
+      {
+        "name": "Purpol",
+        "osu_id": "14287201",
+        "discord": "alexrifty"
+      },
+      {
+        "name": "Prisioner",
+        "osu_id": "17775300",
+        "discord": "priis"
+      },
+      {
+        "name": "Ralle",
+        "osu_id": "14678152",
+        "discord": "theboyralle"
+      },
+      {
+        "name": "Shybye",
+        "osu_id": "13080983",
+        "discord": "shybye"
+      },
+      {
+        "name": "Sidaro",
+        "osu_id": "16315675",
+        "discord": "Sidaro#0822"
+      },
+      {
+        "name": "Slimey26532",
+        "osu_id": "18361419",
+        "discord": "slimey26532"
+      },
+      {
+        "name": "snowy my daddy",
+        "osu_id": "21664590",
+        "discord": "leviathan0625"
+      },
+      {
+        "name": "toti",
+        "osu_id": "10162727",
+        "discord": "toteh"
+      },
+      {
+        "name": "tsuhikari",
+        "osu_id": "19516283",
+        "discord": "kumikxri"
+      },
+      {
+        "name": "veirakk",
+        "osu_id": "15423958",
+        "discord": "veirekk"
+      },
+      {
+        "name": "verc",
+        "osu_id": "22593228",
+        "discord": "kiss3dblunt"
+      },
+      {
+        "name": "waxei",
+        "osu_id": "13241373",
+        "discord": "tiffe_e"
+      },
+      {
+        "name": "xionejunior",
+        "osu_id": "12025825",
+        "discord": "xionejunior"
+      },
+      {
+        "name": "Yousniff",
+        "osu_id": "16196497",
+        "discord": "yousniff"
+      },
+      {
+        "name": "Zalur",
+        "osu_id": "18517514",
+        "discord": "zalur"
+      },
+      {
+        "name": "Ziquids",
+        "osu_id": "10972799",
+        "discord": "ziquids"
+      },
+      {
+        "name": "Zuumo",
+        "osu_id": "24986129",
+        "discord": "zoombro"
+      },
+      {
+        "name": "Zyloon",
+        "osu_id": "15758830",
+        "discord": "zyloon"
+      }
+    ]
+  }
+}
