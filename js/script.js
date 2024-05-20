@@ -43,8 +43,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // Normalize the URL by removing the trailing slash if it exists and the .html extension
     const normalizeUrl = url => {
+        url = url.replace(/\/$/, ''); // Remove trailing slash if present
         url = url.replace(/\.html$/, ''); // Remove .html extension if present
-        url = url.endsWith('/') ? url.slice(0, -1) : url; // Remove trailing slash if present
         return url || '/'; // Return '/' if URL is empty
     };
 
