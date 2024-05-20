@@ -70,15 +70,11 @@ window.addEventListener('DOMContentLoaded', function () {
         const currentPagePath = window.location.pathname;
         const normalizedCurrentPageUrl = normalizeUrl(currentPagePath);
 
-        if (
-            normalizedLinkHref === normalizedCurrentPageUrl ||
-            (normalizedLinkHref === '/' && currentPagePath === '/index.html') ||
-            (normalizedLinkHref === '/index' && currentPagePath === '/')
-        ) {
+        // Check if the current page URL starts with the link URL
+        if (normalizedCurrentPageUrl.startsWith(normalizedLinkHref)) {
             link.closest('.nav-item').classList.add('active');
         }
     });
-
 
     // Scroll event listener for header opacity animation
     window.addEventListener('scroll', function () {
