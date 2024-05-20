@@ -41,13 +41,23 @@ window.addEventListener('DOMContentLoaded', function () {
         // Add more page titles as needed
     };
 
+    // Normalize the URL by removing the trailing slash if it exists
+    const normalizeUrl = url => url.endsWith('/') ? url.slice(0, -1) : url;
+
+    // Handle special case for root URL
+    const normalizedCurrentPageUrl = normalizeUrl(currentPageUrl === '/' ? '/index.html' : currentPageUrl);
+    const normalizedPageTitles = Object.keys(pageTitles).reduce((acc, key) => {
+        acc[normalizeUrl(key)] = pageTitles[key];
+        return acc;
+    }, {});
+
     // Set header title based on the current page URL
-    if (pageTitles[currentPageUrl]) {
-        headerTitle.textContent = pageTitles[currentPageUrl];
-        document.title = pageTitles[currentPageUrl]; // Set HTML title
+    if (normalizedPageTitles[normalizedCurrentPageUrl]) {
+        headerTitle.textContent = normalizedPageTitles[normalizedCurrentPageUrl];
+        document.title = normalizedPageTitles[normalizedCurrentPageUrl]; // Set HTML title
     } else {
         // Extract the title from the HTML file name or URL without .html extension
-        const pageTitle = currentPageUrl.split('/').pop().split('.')[0];
+        const pageTitle = normalizedCurrentPageUrl.split('/').pop().split('.')[0];
         headerTitle.textContent = pageTitle;
         document.title = pageTitle; // Set HTML title
     }
@@ -55,9 +65,13 @@ window.addEventListener('DOMContentLoaded', function () {
     // Set active class for nav-item links
     navItemLinks.forEach(link => {
         const linkHref = link.getAttribute('href');
-        const linkPath = linkHref.endsWith('.html') ? linkHref.slice(0, -5) : linkHref; // Remove .html extension if present
-        const currentPath = currentPageUrl.endsWith('.html') ? currentPageUrl.slice(0, -5) : currentPageUrl; // Remove .html extension if present
-        if (currentPath === linkPath || (linkPath === '/index' && currentPath === '/')) {
+        const linkPath = normalizeUrl(linkHref.endsWith('.html') ? linkHref.slice(0, -5) : linkHref); // Remove .html extension if present
+        const currentPath = normalizeUrl(normalizedCurrentPageUrl.endsWith('.html') ? normalizedCurrentPageUrl.slice(0, -5) : normalizedCurrentPageUrl); // Remove .html extension if present
+
+        // Check for the root URL special case
+        if ((currentPath === '/index' && linkPath === '/') || (linkPath === '/index' && currentPath === '/')) {
+            link.parentNode.classList.add('active');
+        } else if (currentPath === linkPath) {
             link.parentNode.classList.add('active');
         }
     });
