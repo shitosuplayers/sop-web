@@ -38,8 +38,13 @@ window.addEventListener('DOMContentLoaded', function () {
     };
 
     // Set header title based on the current page URL
-    let pageTitle = pageTitles[currentPageUrl] || currentPageUrl.split('/').pop().split('.')[0];
-    headerTitle.textContent = pageTitle;
+    if (pageTitles[currentPageUrl]) {
+        headerTitle.textContent = pageTitles[currentPageUrl];
+    } else {
+        // Extract the title from the HTML file name or URL without .html extension
+        const pageTitle = currentPageUrl.split('/').pop().split('.')[0];
+        headerTitle.textContent = pageTitle;
+    }
 
     // Set active class for nav-item links
     navItemLinks.forEach(link => {
