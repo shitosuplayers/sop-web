@@ -70,7 +70,10 @@ window.addEventListener('DOMContentLoaded', function () {
         const linkPath = normalizeUrl(linkHref.endsWith('.html') ? linkHref.slice(0, -5) : linkHref); // Remove .html extension if present
         const currentPath = normalizeUrl(normalizedCurrentPageUrl.endsWith('.html') ? normalizedCurrentPageUrl.slice(0, -5) : normalizedCurrentPageUrl); // Remove .html extension if present
 
-        if (currentPath === linkPath || (linkPath === '/index' && currentPath === '/')) {
+        // Check for the root URL special case
+        if ((currentPath === '/' && linkPath === '/index') || (currentPath === '/index' && linkPath === '/')) {
+            link.parentNode.classList.add('active');
+        } else if (currentPath === linkPath) {
             link.parentNode.classList.add('active');
         }
     });
