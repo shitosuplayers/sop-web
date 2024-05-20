@@ -9,43 +9,21 @@ app.use((req, res, next) => {
     next();
 });
 
-// Route to fetch member data
-app.get('/data/members', async (req, res) => {
+// Route to test osu! API connection
+app.get('/test-api', async (req, res) => {
     try {
-        // Fetch member data from your JSON file
-        const membersResponse = await fetch('https://shitosuplayers.xyz/data/members.json');
-        const membersData = await membersResponse.json();
+        const osuId = '15794645'; // Example osu! ID for testing
+        const apiUrl = `https://osu.ppy.sh/api/get_user?k=${apiKey}&u=${osuId}`;
+        const response = await fetch(apiUrl);
+        const userData = await response.json();
 
-        // Function to fetch user data from osu! API
-        async function fetchUserData(osuId) {
-            const apiUrl = `https://osu.ppy.sh/api/get_user?k=${apiKey}&u=${osuId}`;
-            const response = await fetch(apiUrl);
-            const userData = await response.json();
-            return userData[0]; // Assuming only one user is returned
+        if (userData && userData.length > 0) {
+            res.json(userData[0]); // Return the first user data object
+        } else {
+            res.status(404).json({ error: 'User not found' });
         }
-
-        // Fetch user data for each member
-        const updatedMembersData = {};
-        for (const category in membersData.members) {
-            updatedMembersData[category] = await Promise.all(
-                membersData.members[category].map(async member => {
-                    const userData = await fetchUserData(member.osu_id);
-                    if (userData) {
-                        return {
-                            ...member,
-                            username: userData.username,
-                            pp_rank: userData.pp_rank,
-                            country: userData.country
-                        };
-                    }
-                    return member;
-                })
-            );
-        }
-
-        res.json({ members: updatedMembersData });
     } catch (error) {
-        console.error('Error fetching member data:', error);
+        console.error('Error fetching osu! API data:', error);
         res.status(500).json({ error: 'Internal server error' });
     }
 });
