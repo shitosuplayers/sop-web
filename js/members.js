@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => document.querySelector('.notice').classList.add('active'), 100);
     
     // Fetch member data from your backend server
-    fetch('https://shitosuplayers.xyz/data/members.json')
+    fetch('https://shitosuplayers.xyz/data/members')
         .then(response => response.json())
         .then(data => {
             const memberList = document.getElementById('memberList');
@@ -29,31 +29,37 @@ document.addEventListener("DOMContentLoaded", function() {
                     const memberInfo = document.createElement('div');
                     memberInfo.classList.add('member-info');
 
-                    // Create HTML for member info
-                    memberInfo.innerHTML = `
-                        <a href="https://osu.ppy.sh/users/${member.osu_id}" class="profileLink"></a>
-                        <img src="https://a.ppy.sh/${member.osu_id}?.jpeg" class="pfp">
-                        <div class="user-info">
-                            <div class="icon-container">
-                                <img src="/media/images/flags/__.png" class="flag">
-                                <img src="/media/images/icons/osu/osu-standard-white.png" class="gamemode-icon">
-                            </div>
-                            <div class="name-rank">
-                                <h1>${member.username}</h1>
-                                <p>#${member.pp_rank}</p>
-                            </div>
-                        </div>
-                        <div class="discord">
-                            <img src="/media/images/icons/socials/discord-mark-white.svg" class="discord-icon">
-                            <p>${member.discord}</p>
-                        </div>
-                        <div class="status-${category.toLowerCase().replace(' ', '-')}">${category}</div>
-                        <div class="outline-${category.toLowerCase().replace(' ', '-')}"></div>
-                        <div class="shadow"></div>
-                    `;
+                    // Fetch additional user data from osu! API
+                    fetch(`https://osu.ppy.sh/api/get_user?k=${apiKey}&u=${member.osu_id}`)
+                        .then(response => response.json())
+                        .then(userData => {
+                            // Create HTML for member info with fetched user data
+                            memberInfo.innerHTML = `
+                                <a href="https://osu.ppy.sh/users/${member.osu_id}" class="profileLink"></a>
+                                <img src="https://a.ppy.sh/${member.osu_id}?.jpeg" class="pfp">
+                                <div class="user-info">
+                                    <div class="icon-container">
+                                        <img src="/media/images/flags/${userData.country}.png" class="flag">
+                                        <img src="/media/images/icons/osu/osu-standard-white.png" class="gamemode-icon">
+                                    </div>
+                                    <div class="name-rank">
+                                        <h1>${userData.username}</h1>
+                                        <p>#${userData.pp_rank}</p>
+                                    </div>
+                                </div>
+                                <div class="discord">
+                                    <img src="/media/images/icons/socials/discord-mark-white.svg" class="discord-icon">
+                                    <p>${member.discord}</p>
+                                </div>
+                                <div class="status-${category.toLowerCase().replace(' ', '-')}">${category}</div>
+                                <div class="outline-${category.toLowerCase().replace(' ', '-')}"></div>
+                                <div class="shadow"></div>
+                            `;
 
-                    // Append member info to container
-                    membersContainer.appendChild(memberInfo);
+                            // Append member info to container
+                            membersContainer.appendChild(memberInfo);
+                        })
+                        .catch(error => console.error('Error fetching user data:', error));
                 });
 
                 // Append members container to category section
