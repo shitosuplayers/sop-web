@@ -67,10 +67,11 @@ window.addEventListener('DOMContentLoaded', function () {
     navItemLinks.forEach(link => {
         const linkHref = link.getAttribute('href');
         const normalizedLinkHref = normalizeUrl(linkHref);
+        const normalizedLinkHrefWithoutHtml = normalizedLinkHref.replace(/\.html$/, ''); // Remove .html extension if present
 
         if (
-            normalizedLinkHref === normalizedCurrentPageUrl ||
-            (normalizedLinkHref === '/index' && normalizedCurrentPageUrl === '/')
+            normalizedLinkHrefWithoutHtml === normalizedCurrentPageUrl ||
+            (normalizedLinkHrefWithoutHtml === '/index' && normalizedCurrentPageUrl === '/')
         ) {
             link.closest('.nav-item').classList.add('active');
         }
