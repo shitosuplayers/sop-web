@@ -41,24 +41,13 @@ window.addEventListener('DOMContentLoaded', function () {
         // Add more page titles as needed
     };
 
-    // Normalize the URL by removing the trailing slash if it exists and the .html extension
-    const normalizeUrl = url => {
-        url = url.replace(/\/$/, ''); // Remove trailing slash if present
-        url = url.replace(/\.html$/, ''); // Remove .html extension if present
-        return url || '/'; // Return '/' if URL is empty
-    };
-
-
-    // Normalize current page URL
-    const normalizedCurrentPageUrl = normalizeUrl(currentPageUrl);
-
     // Set header title based on the current page URL
-    if (pageTitles[normalizedCurrentPageUrl]) {
-        headerTitle.textContent = pageTitles[normalizedCurrentPageUrl];
-        document.title = pageTitles[normalizedCurrentPageUrl]; // Set HTML title
+    if (pageTitles[currentPageUrl]) {
+        headerTitle.textContent = pageTitles[currentPageUrl];
+        document.title = pageTitles[currentPageUrl]; // Set HTML title
     } else {
-        // Extract the title from the URL without .html extension
-        const pageTitle = normalizedCurrentPageUrl.split('/').pop();
+        // Extract the title from the HTML file name or URL without .html extension
+        const pageTitle = currentPageUrl.split('/').pop().split('.')[0];
         headerTitle.textContent = pageTitle;
         document.title = pageTitle; // Set HTML title
     }
@@ -66,15 +55,13 @@ window.addEventListener('DOMContentLoaded', function () {
     // Set active class for nav-item links
     navItemLinks.forEach(link => {
         const linkHref = link.getAttribute('href');
-        const normalizedLinkHref = normalizeUrl(linkHref);
-        const currentPagePath = window.location.pathname;
-        const normalizedCurrentPageUrl = normalizeUrl(currentPagePath);
-
-        // Check if the current page URL starts with the link URL
-        if (normalizedCurrentPageUrl.startsWith(normalizedLinkHref)) {
-            link.closest('.nav-item').classList.add('active');
+        const linkPath = linkHref.endsWith('.html') ? linkHref.slice(0, -5) : linkHref; // Remove .html extension if present
+        const currentPath = currentPageUrl.endsWith('.html') ? currentPageUrl.slice(0, -5) : currentPageUrl; // Remove .html extension if present
+        if (currentPath === linkPath || (linkPath === '/index' && currentPath === '/')) {
+            link.parentNode.classList.add('active');
         }
     });
+
 
     // Scroll event listener for header opacity animation
     window.addEventListener('scroll', function () {
