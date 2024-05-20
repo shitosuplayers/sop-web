@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <img src="https://a.ppy.sh/${member.osu_id}?.jpeg" class="pfp">
                         <div class="user-info">
                             <div class="icon-container">
-                                <img src="/media/images/flags/no.png" class="flag">
+                                <img src="/media/images/flags/__.png" class="flag">
                                 <img src="/media/images/icons/osu/osu-standard-white.png" class="gamemode-icon">
                             </div>
                             <div class="name-rank">
