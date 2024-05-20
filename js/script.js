@@ -44,8 +44,10 @@ window.addEventListener('DOMContentLoaded', function () {
     // Normalize the URL by removing the trailing slash if it exists
     const normalizeUrl = url => url.endsWith('/') ? url.slice(0, -1) : url;
 
-    // Handle special case for root URL
-    const normalizedCurrentPageUrl = normalizeUrl(currentPageUrl === '/' ? '/index.html' : currentPageUrl);
+    // Normalize current page URL
+    const normalizedCurrentPageUrl = normalizeUrl(currentPageUrl);
+    
+    // Create normalized page titles map
     const normalizedPageTitles = Object.keys(pageTitles).reduce((acc, key) => {
         acc[normalizeUrl(key)] = pageTitles[key];
         return acc;
@@ -56,7 +58,7 @@ window.addEventListener('DOMContentLoaded', function () {
         headerTitle.textContent = normalizedPageTitles[normalizedCurrentPageUrl];
         document.title = normalizedPageTitles[normalizedCurrentPageUrl]; // Set HTML title
     } else {
-        // Extract the title from the HTML file name or URL without .html extension
+        // Extract the title from the URL without .html extension
         const pageTitle = normalizedCurrentPageUrl.split('/').pop().split('.')[0];
         headerTitle.textContent = pageTitle;
         document.title = pageTitle; // Set HTML title
@@ -68,10 +70,7 @@ window.addEventListener('DOMContentLoaded', function () {
         const linkPath = normalizeUrl(linkHref.endsWith('.html') ? linkHref.slice(0, -5) : linkHref); // Remove .html extension if present
         const currentPath = normalizeUrl(normalizedCurrentPageUrl.endsWith('.html') ? normalizedCurrentPageUrl.slice(0, -5) : normalizedCurrentPageUrl); // Remove .html extension if present
 
-        // Check for the root URL special case
-        if ((currentPath === '/index' && linkPath === '/') || (linkPath === '/index' && currentPath === '/')) {
-            link.parentNode.classList.add('active');
-        } else if (currentPath === linkPath) {
+        if (currentPath === linkPath || (linkPath === '/index' && currentPath === '/')) {
             link.parentNode.classList.add('active');
         }
     });
