@@ -36,13 +36,13 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // Function to add 'active' class to the appropriate nav item
-    const setActiveNavItem = () => {
-        const currentUrl = window.location.pathname;
-        document.querySelectorAll('.nav-item').forEach(item => {
+    function setActiveNavItem() {
+        const navItems = document.querySelectorAll('.nav-item');
+        navItems.forEach(item => {
             const link = item.querySelector('a').getAttribute('href');
-            item.classList.toggle('active', currentUrl.includes(link));
+            item.classList.toggle('active', window.location.pathname.indexOf(link) !== -1);
         });
-    };
+    }
 
     // Call the function initially to set the active nav item
     setActiveNavItem();
