@@ -27,6 +27,7 @@ main {
     align-items: flex-end;
     border-bottom: 2px solid rgba(0, 0, 0, 0.4);
     padding: 0 20%;
+    white-space: nowrap;
 }
 
 .podium .first-podium, .podium .second-podium, .podium .third-podium {
