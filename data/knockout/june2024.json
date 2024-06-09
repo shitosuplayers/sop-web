@@ -3,244 +3,60 @@
     
     "leaderboard": [
         {
-            "playername": "Kailler",
+            "playername": "sub femboy",
             "placement": 1,
-            "score": 1000000,
-            "acc": 99.5,
-            "misscount": 3,
-            "max_combo": 1000
+            "score": 15463380,
+            "acc": 96.94,
+            "misscount": 7,
+            "max_combo": 727
+        },
+        {
+            "playername": "Mr Wang",
+            "placement": 2,
+            "score": 14345400,
+            "acc": 97.40,
+            "misscount": 5,
+            "max_combo": 723
+        },
+        {
+            "playername": "FREEWAVE 4",
+            "placement": 3,
+            "score": 2847770,
+            "acc": 91.28,
+            "misscount": 21,
+            "max_combo": 363
         },
         {
             "playername": "Akaane",
-            "placement": 2,
-            "score": 999999,
-            "acc": 99.3,
-            "misscount": 5,
-            "max_combo": 950
-        },
-        {
-            "playername": "fu cmass",
-            "placement": 3,
-            "score": 999998,
-            "acc": 99.1,
-            "misscount": 7,
-            "max_combo": 900
-        },
-        {
-            "playername": "Player4",
             "placement": 4,
-            "score": 999997,
-            "acc": 98.9,
-            "misscount": 9,
-            "max_combo": 850
-        },
-        {
-            "playername": "Player5",
-            "placement": 5,
-            "score": 999996,
-            "acc": 98.7,
-            "misscount": 11,
-            "max_combo": 800
-        },
-        {
-            "playername": "Player6",
-            "placement": 6,
-            "score": 999995,
-            "acc": 98.5,
-            "misscount": 13,
-            "max_combo": 750
-        },
-        {
-            "playername": "Player7",
-            "placement": 7,
-            "score": 999994,
-            "acc": 98.3,
-            "misscount": 15,
-            "max_combo": 700
-        },
-        {
-            "playername": "Player8",
-            "placement": 8,
-            "score": 999993,
-            "acc": 98.1,
-            "misscount": 17,
-            "max_combo": 650
-        },
-        {
-            "playername": "Player9",
-            "placement": 9,
-            "score": 999992,
-            "acc": 97.9,
-            "misscount": 19,
-            "max_combo": 600
-        },
-        {
-            "playername": "Player10",
-            "placement": 10,
-            "score": 999991,
-            "acc": 97.7,
-            "misscount": 21,
-            "max_combo": 550
-        },
-        {
-            "playername": "Player11",
-            "placement": 11,
-            "score": 999990,
-            "acc": 97.5,
-            "misscount": 23,
-            "max_combo": 500
-        },
-        {
-            "playername": "Player12",
-            "placement": 12,
-            "score": 999989,
-            "acc": 97.3,
-            "misscount": 25,
-            "max_combo": 450
-        },
-        {
-            "playername": "Player13",
-            "placement": 13,
-            "score": 999988,
-            "acc": 97.1,
-            "misscount": 27,
-            "max_combo": 400
-        },
-        {
-            "playername": "Player14",
-            "placement": 14,
-            "score": 999987,
-            "acc": 96.9,
-            "misscount": 29,
-            "max_combo": 350
-        },
-        {
-            "playername": "Player15",
-            "placement": 15,
-            "score": 999986,
-            "acc": 96.7,
-            "misscount": 31,
-            "max_combo": 300
-        },
-        {
-            "playername": "Player16",
-            "placement": 16,
-            "score": 999985,
-            "acc": 96.5,
-            "misscount": 33,
-            "max_combo": 250
-        },
-        {
-            "playername": "Player17",
-            "placement": 17,
-            "score": 999984,
-            "acc": 96.3,
-            "misscount": 35,
-            "max_combo": 200
-        },
-        {
-            "playername": "Player18",
-            "placement": 18,
-            "score": 999983,
-            "acc": 96.1,
-            "misscount": 37,
-            "max_combo": 150
-        },
-        {
-            "playername": "Player19",
-            "placement": 19,
-            "score": 999982,
-            "acc": 95.9,
-            "misscount": 39,
-            "max_combo": 100
-        },
-        {
-            "playername": "Player20",
-            "placement": 20,
-            "score": 999981,
-            "acc": 95.7,
-            "misscount": 41,
-            "max_combo": 50
-        },
-        {
-            "playername": "Player21",
-            "placement": 21,
-            "score": 999980,
-            "acc": 95.5,
-            "misscount": 43,
-            "max_combo": 30
-        },
-        {
-            "playername": "Player22",
-            "placement": 22,
-            "score": 999979,
-            "acc": 95.3,
-            "misscount": 45,
-            "max_combo": 20
-        },
-        {
-            "playername": "Player23",
-            "placement": 23,
-            "score": 999978,
-            "acc": 95.1,
-            "misscount": 47,
-            "max_combo": 10
-        },
-        {
-            "playername": "Player24",
-            "placement": 24,
-            "score": 999977,
-            "acc": 94.9,
-            "misscount": 49,
-            "max_combo": 5
-        },
-        {
-            "playername": "Player25",
-            "placement": 25,
-            "score": 999976,
-            "acc": 94.7,
-            "misscount": 51,
-            "max_combo": 3
-        },
-        {
-            "playername": "Player26",
-            "placement": 26,
-            "score": 999975,
-            "acc": 94.5,
-            "misscount": 53,
-            "max_combo": 2
-        },
-        {
-            "playername": "Player27",
-            "placement": 27,
-            "score": 999974,
-            "acc": 94.3,
-            "misscount": 55,
-            "max_combo": 1
-        },
-        {
-            "playername": "Player28",
-            "placement": 28,
-            "score": 999973,
-            "acc": 94.1,
-            "misscount": 57,
-            "max_combo": 0
-        },
-        {
-            "playername": "Player29",
-            "placement": 29,
-            "score": 999972,
-            "acc": 93.9,
-            "misscount": 59,
-            "max_combo": 0
-        },
-        {
-            "playername": "Player30",
-            "placement": 30,
-            "score": 999971,
-            "acc": 93.7,
+            "score": 1877230,
+            "acc": 86.73,
             "misscount": 61,
-            "max_combo": 0
+            "max_combo": 307
+        },
+        {
+            "playername": "antimarker",
+            "placement": 5,
+            "score": 2847930,
+            "acc": 90.82,
+            "misscount": 34,
+            "max_combo": 98
+        },
+        {
+            "playername": "Ralle",
+            "placement": 6,
+            "score": 97620,
+            "acc": 69.53,
+            "misscount": 12,
+            "max_combo": 67
+        },
+        {
+            "playername": "Ziquids",
+            "placement": 7,
+            "score": 366012,
+            "acc": 63.22,
+            "misscount": 167,
+            "max_combo": 44
         }
     ]
   }
