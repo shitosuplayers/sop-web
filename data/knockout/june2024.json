@@ -1,10 +1,25 @@
 {
     "beatmap_link": "https://osu.ppy.sh/beatmapsets/1070357#osu/2240526",
-    
     "leaderboard": [
         {
-            "playername": "sub femboy",
+            "playername": "Lawndred",
             "placement": 1,
+            "score": 26548560,
+            "acc": 98.03,
+            "misscount": 0,
+            "max_combo": 1059
+        },
+        {
+            "playername": "Purpol",
+            "placement": 2,
+            "score": 17462490,
+            "acc": 98.17,
+            "misscount": 2,
+            "max_combo": 788
+        },
+        {
+            "playername": "sub femboy",
+            "placement": 3,
             "score": 15463380,
             "acc": 96.94,
             "misscount": 7,
@@ -12,15 +27,23 @@
         },
         {
             "playername": "Mr Wang",
-            "placement": 2,
+            "placement": 4,
             "score": 14345400,
             "acc": 97.40,
             "misscount": 5,
             "max_combo": 723
         },
         {
+            "playername": "Kailler",
+            "placement": 5,
+            "score": 8197440,
+            "acc": 98.14,
+            "misscount": 7,
+            "max_combo": 471
+        },
+        {
             "playername": "FREEWAVE 4",
-            "placement": 3,
+            "placement": 6,
             "score": 2847770,
             "acc": 91.28,
             "misscount": 21,
@@ -28,7 +51,7 @@
         },
         {
             "playername": "Akaane",
-            "placement": 4,
+            "placement": 7,
             "score": 1877230,
             "acc": 86.73,
             "misscount": 61,
@@ -36,7 +59,7 @@
         },
         {
             "playername": "antimarker",
-            "placement": 5,
+            "placement": 8,
             "score": 2847930,
             "acc": 90.82,
             "misscount": 34,
@@ -44,7 +67,7 @@
         },
         {
             "playername": "Ralle",
-            "placement": 6,
+            "placement": 9,
             "score": 97620,
             "acc": 69.53,
             "misscount": 12,
@@ -52,12 +75,19 @@
         },
         {
             "playername": "Ziquids",
-            "placement": 7,
+            "placement": 10,
             "score": 366012,
             "acc": 63.22,
             "misscount": 167,
             "max_combo": 44
+        },
+        {
+            "playername": "Fu cmass",
+            "placement": 11,
+            "score": 11375,
+            "acc": 3.04,
+            "misscount": 886,
+            "max_combo": 17
         }
     ]
-  }
-  
+}
