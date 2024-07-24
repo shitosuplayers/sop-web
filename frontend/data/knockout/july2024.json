@@ -2,12 +2,52 @@
     "beatmap_link": "https://osu.ppy.sh/beatmapsets/1026767#osu/2527867",
     "leaderboard": [
         {
-            "playername": "Lawndred",
+            "playername": "GATmoneyTJ1994",
             "placement": 1,
-            "score": 26548560,
-            "acc": 98.03,
-            "misscount": 0,
-            "max_combo": 1059
+            "score": 96463811,
+            "acc": 99.49,
+            "max_combo": 2452,
+            "misscount": 0
+        },
+        {
+            "playername": "veirakk",
+            "placement": 2,
+            "score": 37559270,
+            "acc": 98.80,
+            "max_combo": 1465,
+            "misscount": 2
+        },
+        {
+            "playername": "Kailler",
+            "placement": 3,
+            "score": 23635692,
+            "acc": 97.86,
+            "max_combo": 806,
+            "misscount": 8
+        },
+        {
+            "playername": "FREEWAVE 4",
+            "placement": 4,
+            "score": 7894166,
+            "acc": 95.69,
+            "max_combo": 652,
+            "misscount": 16
+        },
+        {
+            "playername": "Akaane",
+            "placement": 5,
+            "score": 5246316,
+            "acc": 83.56,
+            "max_combo": 328,
+            "misscount": 36
+        },
+        {
+            "playername": "antimarker",
+            "placement": 6,
+            "score": 2583852,
+            "acc": 77.49,
+            "max_combo": 178,
+            "misscount": 91
         }
     ]
 }
