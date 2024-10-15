@@ -1,1 +1,1 @@
-[shitosuplayers.xyz](https://shitosuplayers.xyz)
+# shit osu! players
