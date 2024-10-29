@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Leaderboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/knockout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <div id="bgGrad"></div>
+
+    <header>
+        <div id="headerSolid" class="headerSolid"></div>
+        <div class="navbar">
+            <div class="nav-branding">
+                <a href="/"><img src="/assets/images/logos/sopWhiteOutline.png" class="logo-img"
+                        data-alt-src="/assets/images/logos/sop.png"></a>
+                <h1></h1>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/members">Members</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/faqs">FAQs</a>
+                </li>
+
+                <li class="nav-socials">
+                    <a class="discord" href="" target="_blank">
+                        <img src="/assets/images/icons/socials/discord-mark-white.svg">
+                    </a>
+
+                    <div class="vertical-seperator"></div>
+
+                    <a class="twitter" href="" target="_blank">
+                        <img src="/assets/images/icons/socials/x-mark-white.svg">
+                    </a>
+
+                    <div class="vertical-seperator"></div>
+
+                    <a class="youtube" href="" target="_blank">
+                        <img src="/assets/images/icons/socials/youtube-mark-white.svg">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="beatmap-background"></div>
+
+        <div class="podium">
+            <div class="second-podium">
+                <div class="second-place-player"></div>
+            </div>
+            <div class="first-podium">
+                <div class="first-place-player"></div>
+            </div>
+            <div class="third-podium">
+                <div class="third-place-player"></div>
+            </div>
+        </div>
+
+        
+        <div id="leaderboard-container">
+            <div class="title-card">
+                <div class="title-info">
+                    <div class="player-name">Player name</div>
+                    <div class="player-score">Score</div>
+                    <div class="player-max-combo">Combo</div>
+                    <div class="player-acc">Accuracy</div>
+                    <div class="player-miss-count">Miss count</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <img src="/assets/images/logos/sopWhiteOutline.png" alt="">
+                <h1>shit osu! players</h1>
+            </div>
+            <p>shit osu! players © 2024 All Rights Reserved</p>
+            <div class="socials">
+                <a class="discord" href="" target="_blank"><i class='bx bxl-discord-alt'></i></a>
+                <a class="twitter" href="" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a class="instagram" href="" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a class="youtube" href="" target="_blank"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <h4>Information</h4>
+            <li><a href="">coming soon</a></li>
+            <li><a href="">coming soon</a></li>
+            <li><a href="">coming soon</a></li>
+        </div>
+
+        <div class="footer-content">
+            <h4>Upcoming Events</h4>
+            <li><a href="">sop!Meetup 2024</a></li>
+            <li><a href=""></a></li>
+        </div>
+
+        <div class="footer-content">
+            <h4>Connect with Us</h4>
+            <li><a href="mailto:shitosuplayers@gmail.com" target="_blank">Email: shitosuplayers@gmail.com</a></li>
+            <li><a href="" target="_blank">Join Our Community</a></li>
+        </div>
+    </footer>
+
+    <script src="/js/knockout.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

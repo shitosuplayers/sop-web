@@ -1,0 +1,46 @@
+<header>
+    <div id="headerSolid" class="headerSolid"></div>
+    <div class="navbar">
+        <div class="nav-branding">
+            <a href="/"><img src="/assets/images/logos/sopWhiteOutline.png" class="logo-img"
+                    data-alt-src="/assets/images/logos/sop.png"></a>
+            <h1><%- headerTitle %></h1>
+        </div>
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/members">Members</a>
+            </li>
+            <li class="nav-item">
+                <a href="/faqs">FAQs</a>
+            </li>
+
+            <li class="nav-socials">
+                <a class="discord" href="<%= socialLinks.discord %>" target="_blank">
+                    <img src="/assets/images/icons/socials/discord-mark-white.svg">
+                </a>
+
+                <div class="vertical-seperator"></div>
+
+                <a class="twitter" href="<%= socialLinks.twitter %>" target="_blank">
+                    <img src="/assets/images/icons/socials/x-mark-white.svg">
+                </a>
+
+                <div class="vertical-seperator"></div>
+
+                <a class="youtube" href="<%= socialLinks.youtube %>" target="_blank">
+                    <img src="/assets/images/icons/socials/youtube-mark-white.svg">
+                </a>
+            </li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</header>

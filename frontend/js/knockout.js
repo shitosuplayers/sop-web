@@ -20,8 +20,8 @@ function clearUI() {
 const htmlFileName = window.location.pathname.split('/').pop();
 let jsonFilePath;
 
-if (htmlFileName.endsWith('.html')) {
-    jsonFilePath = `/data/knockout/${htmlFileName.replace('.html', '.json')}`;
+if (htmlFileName.endsWith('')) {
+    jsonFilePath = `/data/knockout/${htmlFileName.replace('', '.json')}`;
 } else {
     jsonFilePath = `/data/knockout/${htmlFileName}.json`;
 }

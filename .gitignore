@@ -1,2 +1,6 @@
-frontend/data/members.json
-backend/data/members.json
+#directories
+node_modules/
+.vscode/
+
+#files
+.env
