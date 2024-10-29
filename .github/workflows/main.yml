@@ -24,6 +24,12 @@ jobs:
         port: 22
         script: |
           cd /var/www/sop/
+          git reset --hard HEAD
           git pull origin main
+          git clean -fd
           git status
           npm install --only=prod
+          cd backend
+          git status
+          npm install --only=prod
+          pm2 restart ./server.js --name sop --watch
