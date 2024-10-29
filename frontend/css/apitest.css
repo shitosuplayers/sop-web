@@ -10,7 +10,7 @@ body {
 
 @font-face {
     font-family: Gemunu;
-    src: url(/media/fonts/GemunuLibre.ttf);
+    src: url(/assets/fonts/GemunuLibre.ttf);
 }
 
 #bgGrad {
