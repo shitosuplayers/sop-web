@@ -18,12 +18,12 @@
 
 @font-face {
     font-family: Aller;
-    src: url(/media/fonts/Aller_Bold.ttf);
+    src: url(/assets/fonts/Aller_Bold.ttf);
 }
 
 @font-face {
     font-family: Gemunu;
-    src: url(/media/fonts/GemunuLibre.ttf);
+    src: url(/assets/fonts/GemunuLibre.ttf);
 }
 
 body {

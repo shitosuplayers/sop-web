@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osu! Player Info</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logos/favicon.png">
+    <link rel="stylesheet" href="/css/apitest.css">
+</head>
+<body>
+    <div id="bgGrad"></div>
+
+    <div class="input-container">
+        <input type="text" id="usernameInput" placeholder="Enter Username">
+        <input type="text" id="discordInput" placeholder="Enter Discord Username">
+        <select id="statusSelect">
+            <option value="Member">Member</option>
+            <option value="Owner">Owner</option>
+            <option value="Moderator">Moderator</option>
+            <option value="Content Manager">Content Manager</option>
+        </select>
+        <button onclick="updatePlayerInfo()">Update Player Info</button>
+    </div>
+
+    <div class="member-info" id="playerInfo"></div>
+    
+    <script src="/js/apitest.js"></script>
+</body>
+</html>

@@ -11,7 +11,7 @@ function updatePlayerInfo() {
             const player = data[0];
             const rank = `#${player.pp_rank}`;
             const country = player.country.toLowerCase(); // Convert country code to lowercase
-            const flagUrl = `/media/images/flags/${country}.png`; // Assuming flags are stored in /images/flags folder
+            const flagUrl = `/assets/images/flags/${country}.png`; // Assuming flags are stored in /images/flags folder
             const avatarUrl = `https://a.ppy.sh/${player.user_id}`;
             const osuUsername = player.username; // Retrieve username from API response
 
@@ -23,7 +23,7 @@ function updatePlayerInfo() {
                 <div class="user-info">
                     <div class="icon-container">
                         <img src="${flagUrl}" class="flag">
-                        <img src="/media/images/icons/osu/osu-standard-white.png" class="gamemode-icon">
+                        <img src="/assets/images/icons/osu/osu-standard-white.png" class="gamemode-icon">
                     </div>
                     <div class="name-rank">
                         <h1>${osuUsername}</h1> <!-- Display username from API response -->
@@ -32,7 +32,7 @@ function updatePlayerInfo() {
                 </div>
 
                 <div class="discord">
-                    <img src="/media/images/icons/socials/discord-mark-white.svg" class="discord-icon">
+                    <img src="/assets/images/icons/socials/discord-mark-white.svg" class="discord-icon">
                     <p>${discord}</p>
                 </div>
 
