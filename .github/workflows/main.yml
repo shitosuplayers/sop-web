@@ -23,7 +23,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
-          cd /var/www/sop/
+          cd /var/www/sop-web/
           git reset --hard HEAD
           git pull origin main
           git clean -fd
