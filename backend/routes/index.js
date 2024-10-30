@@ -1,4 +1,6 @@
-const express = require("express");
+// routes/index.js
+import express from 'express';
+
 const router = express.Router();
 
 router.get("/", (req, res) => {
@@ -6,7 +8,6 @@ router.get("/", (req, res) => {
         title: "shit osu! players",
         headerTitle: "shit osu! players",
     });
-
 });
 
-module.exports = router;
+export default router; // Export the router
