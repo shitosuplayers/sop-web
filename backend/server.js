@@ -27,6 +27,7 @@ app.use((req, res, next) => {
         youtube: "https://youtube.com/@shitosuplayers",
         instagram: "https://instagram.com/shitosuplayers",
         github: "https://github.com/shitosuplayers",
+        twitch: "https://twitch.tv/shitosuplayers"
     };
     res.locals.email = "shitosuplayers@gmail.com";
     next();
