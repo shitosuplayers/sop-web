@@ -169,28 +169,34 @@ header h1 {
     opacity: 1;
 }
 
-.nav-menu a:hover {
-    transform: scale(1.1);
-}
-
 .navbar img {
     height: 100%;
+}
+
+.nav-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-socials {
     height: 100%;
     width: auto;
-    gap: 8px;
+    gap: 6px;
     display: flex;
     align-items: center;
+    vertical-align: bottom;
 }
 
-.nav-socials img {
-    height: 100px;
-    width: 100px;
-    max-width: 18px;
-    max-height: 18px;
-    margin-top: 1px;
+.nav-socials i {
+    font-size: 21px;
+    color: white;
+    transition: transform 0.1s ease-out;
+    margin-top: -1px;
+}
+
+.nav-socials i:hover {
+    transform: scale(1.1);
 }
 
 .vertical-seperator {
@@ -339,7 +345,7 @@ footer {
     margin: 20px 0;
 }
 
-.socials i {
+footer .socials i {
     display: inline-block;
     font-size: 22px;
     color: #d6d6d6;
@@ -347,7 +353,7 @@ footer {
     transition: 0.3s ease-out;
 }
 
-.socials i:hover {
+footer .socials i:hover {
     color: #fff;
 }
 
