@@ -287,11 +287,11 @@ header h1 {
 footer {
     word-spacing: -3px;
     padding: 80px 13% 70px;
-    background-color: #17071f;
+    background-color: #1f082b;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 3.5rem;
-    box-shadow: 0 50vh 0 50vh #17071f;
+    box-shadow: 0 50vh 0 50vh #1f082b;
 }
 
 .footer-branding {
